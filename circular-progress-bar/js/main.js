@@ -12,7 +12,7 @@ numbers.forEach((number, index) => {
       counters[index] += 1;
       // number.innerHTML = counters[index] + "%";
       svgEl[index].style.strokeDashoffset = Math.floor(
-        472 - 410 * parseFloat(number.dataset.num / 100)
+        472 - 300 * parseFloat(number.dataset.num / 100)
       );
     }
   }, 20);
