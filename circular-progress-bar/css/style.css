@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.skill-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-container .skill {
+  position: relative;
+  margin-right: 40px;
+}
+
+.skill-container .skill .outer {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  padding: 5px;
+  /* border: 1px solid gray; */
+
+  box-shadow: inset 0 0 0 6px gray;
+}
+
+.skill-container .skill .outer .inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  /* border: 10px solid black; */
+}
+
+.skill-container .skill .outer .inner .number {
+  font-weight: 800;
+}
+
+.skill-container .skill:nth-child(1) .outer .inner .number {
+  color: #f75023;
+}
+
+.skill-container .skill:nth-child(2) .outer .inner .number {
+  color: #4fa0ff;
+}
+
+.skill-container .skill:nth-child(3) .outer .inner .number {
+  color: #7811f7;
+}
+
+circle {
+  fill: none;
+  stroke-width: 6px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  transition: 2s linear;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.skill-container .skill:nth-child(1) circle {
+  stroke: #f75023;
+}
+
+.skill-container .skill:nth-child(2) circle {
+  stroke: #4fa0ff;
+}
+
+.skill-container .skill:nth-child(3) circle {
+  stroke: #7811f7;
+}
