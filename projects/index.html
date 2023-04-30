@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Projects</title>
+    <link rel="stylesheet" href="css/project.css" />
+    <link rel="stylesheet" href="css/boilerplate.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="project.scss" />
+    <link rel="stylesheet" href="boilerplate.scss" /> -->
+  </head>
+
+  <body>
+    <section class="project" id="projects">
+      <div class="container">
+        <div class="project-content">
+          <p>Portfolio</p>
+          <h3>Lorem ipsum dolor sit amet</h3>
+          <div class="projects-grid">
+            <div class="pro pro__1 undefined">
+              <div class="pro__img">
+                <a href="#">
+                  <img
+                    src="img/project1.png"
+                    alt="Project1"
+                    style="
+                      transform: translateY(0%);
+                      transition: transform 10s ease-in-out 0s;
+                    "
+                    class="pro__img_1"
+                    onmouseenter="handleMouseEnter()"
+                    onmouseleave="handleMouseLeave()"
+                  />
+                </a>
+              </div>
+              <div class="pro__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus nam quo corrupti fugit nemo eius consequuntur
+                natus officia repellendus sit.
+              </div>
+            </div>
+            <div class="pro pro___1 reversed-proj"></div>
+            <div class="pro pro___1 undefined"></div>
+            <div class="pro pro___1 reversed-proj"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      function handleMouseEnter() {
+        const element = document.querySelector(".pro__img_1");
+        element.style.transform = "translateY(-70%)";
+        element.style.transition = "transform 6s ease-in-out";
+      }
+
+      function handleMouseLeave() {
+        const element = document.querySelector(".pro__img_1");
+        element.style.transform = "translateY(0%)";
+        element.style.transition = "transform 6s ease-in-out";
+      }
+    </script>
+  </body>
+</html>
