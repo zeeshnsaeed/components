@@ -1,22 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Projects</title>
-    <link rel="stylesheet" href="css/project.css" />
-    <link rel="stylesheet" href="css/boilerplate.css" />
+    <title>Projects1</title>
     <link rel="stylesheet" href="css/style.css" />
-    <!-- <link rel="stylesheet" href="project.scss" />
-    <link rel="stylesheet" href="boilerplate.scss" /> -->
   </head>
 
   <body>
-    <section class="project" id="projects">
-      <div class="container">
+    <section class="section-project" id="projects">
+      <div class="project-container">
         <div class="project-content">
-          <p>Portfolio</p>
-          <h3>Lorem ipsum dolor sit amet</h3>
+          <p class="project-heading">Portfolio</p>
+          <!-- <h3>Lorem ipsum dolor sit amet</h3> -->
           <div class="projects-grid">
-            <div class="pro pro__1 undefined">
+            <div class="project project__1 undefined">
               <div class="pro__img">
                 <a href="#">
                   <img
@@ -33,30 +29,31 @@
                 </a>
               </div>
               <div class="pro__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Necessitatibus nam quo corrupti fugit nemo eius consequuntur
-                natus officia repellendus sit.
+                <h3>Eatsy</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Laudantium, illum. Lorem, ipsum dolor sit amet consectetur
+                  adipisicing elit. Laudantium, vitae officia. Officia soluta
+                  nostrum impedit.
+                </p>
+                <div class="stack">
+                  <p>HTML</p>
+                  <p>CSS</p>
+                </div>
+                <div class="links">
+                  <a href="#">Code</a>
+                  <a href="#">Live</a>
+                </div>
               </div>
             </div>
-            <div class="pro pro___1 reversed-proj"></div>
-            <div class="pro pro___1 undefined"></div>
-            <div class="pro pro___1 reversed-proj"></div>
+            <!-- <div class="project project__1 reversed-proj"></div>
+            <div class="project project__1 undefined"></div>
+            <div class="project project__1 reversed-proj"></div> -->
           </div>
         </div>
       </div>
     </section>
-    <script>
-      function handleMouseEnter() {
-        const element = document.querySelector(".pro__img_1");
-        element.style.transform = "translateY(-70%)";
-        element.style.transition = "transform 6s ease-in-out";
-      }
 
-      function handleMouseLeave() {
-        const element = document.querySelector(".pro__img_1");
-        element.style.transform = "translateY(0%)";
-        element.style.transition = "transform 6s ease-in-out";
-      }
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>
